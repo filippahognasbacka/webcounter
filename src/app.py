@@ -15,6 +15,6 @@ def increment():
 
 @app.route("/reset", methods=["POST"])
 def reset():
-    cnt.value = 0
+    cnt.reset()
     return redirect("/")
     
